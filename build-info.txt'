@@ -1,0 +1,1 @@
+                bat 'echo Build #%BUILD_NUMBER% executed on %DATE% %TIME% 
