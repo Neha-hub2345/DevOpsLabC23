@@ -1,1 +1,1 @@
-﻿console.log('Hello World from DevOpsLabC23');
+﻿console.log('Hello World from DevOpsLabC23!');
