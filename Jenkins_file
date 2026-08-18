@@ -13,8 +13,18 @@ pipeline {
         APP_NAME = 'StudentApp' 
         VERSION = '1.0' 
     } 
- 
+
     stages { 
+        stage('Environment Variables') {
+            steps {
+                echo "Job Name: ${JOB_NAME}"
+                echo "Build Number: ${BUILD_NUMBER}"
+                echo "Build ID: ${BUILD_ID}"
+                echo "Build URL: ${BUILD_URL}"
+                echo "Workspace: ${WORKSPACE}"
+                echo "Jenkins URL: ${JENKINS_URL}"
+            }
+        }
  
         stage('Information') { 
             steps { 
